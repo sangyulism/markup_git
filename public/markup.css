@@ -1,0 +1,85 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px;
+    background-image:url('fashion_man.jpg');
+}
+
+#title {
+    color: white;
+    display: white;
+    font-style: italic;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 0.10em;
+    margin-bottom: 0.10em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align:center;
+    background-color: black;
+}
+
+.button{
+    margin: auto;
+    background-color: black;
+    color: white;
+    border: 2px solid #008CBA;
+    font-size: 3em;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 100%;
+    height: 40%;
+}
+
+#first {
+    font-style: italic;
+    font-size: larger;
+    color: blueviolet;
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+#second {
+    grid-row: 1/3;
+    grid-column: 2/4;
+}
+
+#third {
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+#fourth {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+#fifth {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+#sixth {
+    grid-row: 3/4;
+    grid-column: 2/4;
+}
+
+#seventh {
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+
+#eighth {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    font-size: 3em;
+}
+#ninth {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+#tenth {
+    grid-row: 4/5;
+    grid-column: 3/4;
+}

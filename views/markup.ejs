@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <link rel='stylesheet' href='markup.css'>
+    <title>패션 정기구독 서비스 SENCE</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="title">
+        패션 정기구독 서비스<br>
+        SENCE
+    </div>
+    <div class='container'>
+        <div id='first'>
+            상상속에만 있던
+            옷장,<br>매일 예쁘고 SENCE한것만 입고 싶다면<br>이제 쇼핑하지말고 ‘구독’하세요.
+        </div>
+        <div id='second'>
+            <!-- <img src="./패션 정기구독 서비스 TLENDY_files/fashion.jpg" alt="fashion image"
+            style="vertical-align:middle;"> -->
+        </div>
+        <div id='third'>
+            <input id='signup_id' class='before_login' type='text' />
+            <input id='signup_password' class='before_login' type='text' />
+            <input id='login_button' class='before_login' type='button' value='log in' onclick='test()' />
+            <a id='signup_button' class='before_login' href='https://naver.com'>
+                <button>
+                    sign up
+                </button>
+            </a>
+            <a id='mypage' class='after_login' href='https://naver.com' style="display: none;">
+                <button class='button'>
+                    My Page
+                </button>
+            </a>
+            <input id='logout_button' class='after_login' type='button' value='log out' onclick='logout()'
+                style="display:none" />
+        </div>
+        <div id='fourth'>
+
+        </div>
+        <div id='fifth'>
+        </div>
+        <div id='sixth' style="vertical-align: bottom;">
+            <a href='https://naver.com'>
+                <button class='button'>
+                    get your style quiz(click this)
+                </button>
+            </a>
+        </div>
+        <div id='seventh' style="margin: auto;">
+            <a href='https://naver.com'>
+                <button class='button'>
+                    멤버십 가입
+                </button>
+            </a>
+        </div>
+        <div id='eighth'>
+            <!-- DOWNLOAD -> -->
+        </div>
+        <div id='ninth' style="margin: auto;">
+            <a href="https://itunes.apple.com/kr/app/tlendy-%ED%8A%B8%EB%A0%8C%EB%94%94-%ED%8C%A8%EC%85%98-%EC%A0%95%EA%B8%B0%EA%B5%AC%EB%8F%85-%EC%84%9C%EB%B9%84%EC%8A%A4/id1404289501?mt=8"
+                target="_blank" rel="noopener noreferrer">
+                <img src="file:///Users/sangylee/workspace/school/패션 정기구독 서비스 TLENDY_files/btn-download-appstore@3x.jpeg"
+                    alt="TLENDY">
+            </a>
+        </div>
+        <div id='tenth' style="margin: auto;">
+            <a href="https://play.google.com/store/apps/details?id=co.actionrabbit.tlendy" target="_blank"
+                rel="noopener noreferrer">
+                <img src="file:///Users/sangylee/workspace/school/패션 정기구독 서비스 TLENDY_files/btn-download-android@3x.png"
+                    alt="TLENDY">
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <div id='foot'>
+            <footer>(주) 웹앱개발 I 대표 나 I 사업자 등록번호 000-00-00000 <br>서울시 관악구
+                <br>고객문의 mail@gamil.com<br>
+                <div></div>Copyright actionrabbit Inc.2019.
+            </footer>
+            <ul>
+                <li><a href="https://www.instagram.com/tlendy_official/?hl=ko" target="_blank"
+                        rel="noopener noreferrer"><img
+                            src="file:///Users/sangylee/workspace/school/패션 정기구독 서비스 TLENDY_files/icon-insta@3x.png"
+                            alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/%ED%8A%B8%EB%A0%8C%EB%94%94-115048506024451/?eid=ARCQr-ZPLEdkEA5WgnKOyvFL8L-nw-UXb-I0od_ycz5ZAmE75KAaQd0ptoOcTU9bMVVIRupIPs4oYmHk"
+                        target="_blank" rel="noopener noreferrer"><img
+                            src="file:///Users/sangylee/workspace/school/패션 정기구독 서비스 TLENDY_files/icon-facebook@3x.png"
+                            alt="Facebook"></a></li>
+                <li>
+                    <a href="http://pf.kakao.com/_IcTvC/chat" target="_blank" rel="noopener noreferrer">
+                        <img src="file:///Users/sangylee/workspace/school/패션 정기구독 서비스 TLENDY_files/icon-kakao@3x.png"
+                            alt="Kakao">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    function test() {
+        const signup_id = document.getElementById('signup_id');
+        const signup_password = document.getElementById('signup_password');
+        if (signup_id.value == 'sangyul' && signup_password.value == '19950414') {
+            login()
+        } else {
+            alert("wrong");
+        }
+    }
+    function login() {
+        // document.getElementsByClassName('before_login').style.display='none';
+        // document.getElementsByClassName('after_login').style.display='block';
+        document.getElementById('signup_id').style.display = 'none';
+        document.getElementById('signup_password').style.display = 'none';
+        document.getElementById('login_button').style.display = 'none';
+        document.getElementById('signup_button').style.display = 'none';
+        document.getElementById('mypage').style.display = 'block';
+        document.getElementById('logout_button').style.display = 'block';
+    }
+    function logout() {
+        // document.getElementsByClassName('before_login').style.display='block';
+        // document.getElementsByClassName('after_login').style.display='none';
+        document.getElementById('signup_id').style.display = 'block';
+        document.getElementById('signup_password').style.display = 'block';
+        document.getElementById('login_button').style.display = 'block';
+        document.getElementById('signup_button').style.display = 'block';
+        document.getElementById('logout_button').style.display = 'none';
+        document.getElementById('mypage').style.display = 'none';
+    }
+</script>
+
+</html>
